@@ -20,9 +20,9 @@ def generate_array array_length, range_start, range_end
 end
 
 # PARAMETERS
-ARR_LEN = 10
-BOTTOM = -99
-TOP = 100
+ARR_LEN = 15
+BOTTOM = -999
+TOP = 1000
 
 arr = generate_array ARR_LEN, BOTTOM, TOP
 print "Bubble:\t#{bubble_sort arr}\n"
