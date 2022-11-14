@@ -4,6 +4,7 @@
 # output is printed to the terminal
 
 require './bubble_sort.rb'
+require './bubblr_sort.rb'
 require './selection_sort.rb'
 require './insertion_sort.rb'
 require './quick_sort.rb'
@@ -26,6 +27,9 @@ TOP = 1000
 
 arr = generate_array ARR_LEN, BOTTOM, TOP
 print "Bubble:\t#{bubble_sort arr}\n"
+
+arr = generate_array ARR_LEN, BOTTOM, TOP
+print "BubblR:\t#{bubblr_sort arr}\n"
 
 arr = generate_array ARR_LEN, BOTTOM, TOP
 print "Coktal:\t#{cocktail_shaker_sort arr}\n"
