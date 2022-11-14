@@ -7,7 +7,7 @@ class BubblR_Sort
 				changed = true
 			end
 			i = i + 1
-			arr, changed = swap arr, changed, i
+			arr, changed = self.swap arr, changed, i
 		else
 			return arr, changed
 		end
@@ -16,8 +16,8 @@ class BubblR_Sort
 		if changed == true
 			changed = false
 			i = 0
-			arr, changed = swap arr, changed, i
-			sort_main arr, changed
+			arr, changed = self.swap arr, changed, i
+			self.sort_main arr, changed
 		else
 			return arr
 		end
