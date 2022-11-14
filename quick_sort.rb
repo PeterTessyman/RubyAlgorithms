@@ -13,6 +13,7 @@ class Quick_Sort
 		end
 		return candidate
 	end
+
 	# start at the right extreme and work inwards
 	# when a value lower than pivot is found, break
 	def scan_from_right arr, pivot
@@ -27,6 +28,7 @@ class Quick_Sort
 		end
 		return candidate
 	end
+
 	# slice the array into 2 sub arrays and quick_sort them
 	def slice arr, pivot
 		# create first slice
@@ -42,6 +44,7 @@ class Quick_Sort
 		# merge the first and second slices
 		return first_slice + second_slice
 	end
+
 	# quick sort
 	def sort arr
 		# find pivot
