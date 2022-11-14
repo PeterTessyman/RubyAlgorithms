@@ -1,21 +1,21 @@
-def cocktail_shaker_sort array
+def cocktail_shaker_sort arr
     loop do
         have_changes_been_made = false
-        up = 0
-        sink = array.length - 1
-        while up < array.length - 1
-            if array[up] > array[up + 1] then
-                array[up], array[up + 1] = array[up + 1], array[up]
+        bubble = 0
+        sink = arr.length - 1
+        while bubble < arr.length - 1
+            if arr[bubble] > arr[bubble + 1] then
+                arr[bubble], arr[bubble + 1] = arr[bubble + 1], arr[bubble]
                 have_changes_been_made = true
             end
-            up += 1
+            bubble += 1
         end
         unless have_changes_been_made == true
             break
         end
         while 0 < sink
-            if array[sink] < array[sink - 1]
-                array[sink], array[sink - 1] = array[sink - 1], array[sink]
+            if arr[sink] < arr[sink - 1]
+                arr[sink], arr[sink - 1] = arr[sink - 1], arr[sink]
                 have_changes_been_made = true
             end
             sink -= 1
@@ -24,5 +24,5 @@ def cocktail_shaker_sort array
             break
         end
     end
-    return array
+    return arr
 end
