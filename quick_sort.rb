@@ -32,12 +32,12 @@ class Quick_Sort
 		# create first slice
 		first_slice = arr.slice 0 ... pivot
 		if first_slice.length > 1
-			first_slice = sort first_slice
+			first_slice = self.sort first_slice
 		end
 		# generate second slice
 		second_slice = arr.slice pivot ... arr.length
 		if second_slice.length > 1
-			second_slice = sort second_slice
+			second_slice = self.sort second_slice
 		end
 		# merge the first and second slices
 		return first_slice + second_slice
@@ -53,8 +53,8 @@ class Quick_Sort
 		right = arr.length - 1
 		until left >= right
 			# find candidates to swap
-			left = scan_from_left arr, pivot # left of pivot
-			right = scan_from_right arr, pivot # right of pivot
+			left = self.scan_from_left arr, pivot # left of pivot
+			right = self.scan_from_right arr, pivot # right of pivot
 			# swap the left and right side elements
 			arr[left], arr[right] = arr[right], arr[left]
 		end
