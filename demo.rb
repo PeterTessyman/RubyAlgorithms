@@ -21,27 +21,34 @@ def generate_array array_length, range_start, range_end
 end
 
 # PARAMETERS
-ARR_LEN = 15
-BOTTOM = -999
-TOP = 1000
+ARR_LEN = 10
+BOTTOM = 0
+TOP = 1_000_000_000
 
+bubble = Bubble_Sort.new
 arr = generate_array ARR_LEN, BOTTOM, TOP
-print "Bubble:\t#{bubble_sort arr}\n"
+print "Bubble:\t#{bubble.sort arr}\n"
 
+bubblr = BubblR_Sort.new
 arr = generate_array ARR_LEN, BOTTOM, TOP
-print "BubblR:\t#{bubblr_sort arr}\n"
+print "BubblR:\t#{bubblr.sort arr}\n"
 
+cocktail_shaker = Cocktail_Shaker_Sort.new
 arr = generate_array ARR_LEN, BOTTOM, TOP
-print "Coktal:\t#{cocktail_shaker_sort arr}\n"
+print "Coktal:\t#{cocktail_shaker.sort arr}\n"
 
+quick = Quick_Sort.new
 arr = generate_array ARR_LEN, BOTTOM, TOP
-print "Quick:\t#{quick_sort arr}\n"
+print "Quick:\t#{quick.sort arr}\n"
 
+selection = Selection_Sort.new
 arr = generate_array ARR_LEN, BOTTOM, TOP
-print "Select\t#{selection_sort arr}\n"
+print "Select\t#{selection.sort arr}\n"
 
+insertion = Insertion_Sort.new
 arr = generate_array ARR_LEN, BOTTOM, TOP
-print "Insert:\t#{insertion_sort arr}\n"
+print "Insert:\t#{insertion.sort arr}\n"
 
+merge = Merge_Sort.new
 arr = generate_array ARR_LEN, BOTTOM, TOP
-print "Merge:\t#{merge_sort arr}\n"
+print "Merge:\t#{merge.sort arr}\n"
