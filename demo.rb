@@ -1,5 +1,3 @@
-#!ruby
-
 # ABOUT THE DEMO
 # each algorithm is called individually and fed a unique array populated
 # with randomly genrated integers
